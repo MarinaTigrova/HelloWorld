@@ -1,0 +1,7 @@
+int[] nums = {1,2,3,4,5};
+int temp = nums[0];
+    nums[0] = nums[4];
+    nums[4] = temp;
+    int last = nums[nums.length-1];
+    int middle = nums[nums.length/2-1];
+          System.out.println(last + middle);
