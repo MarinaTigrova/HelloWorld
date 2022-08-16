@@ -1,0 +1,28 @@
+  public static void main(String[] args) {
+        System.out.println("Введите первое число:");
+        Scanner scanner = new Scanner(System.in);
+        int x = Scanner.textInt();
+        System.out.println("Введите второе число:");
+        Scanner scanner = new Scanner(System.in);
+        int y = Scanner.textInt();
+        System.out.println("Введите действие +,-,* или /:");
+        Scanner scanner = new Scanner(System.in);
+        int oper = Scanner.textInt();
+               if (oper == +) {
+                   int m = (x + y);
+                   System.out.println("Сумма введенных чисел =" + m);
+               }
+               else  if (oper == -) {
+                   int m = (x - y);
+                   System.out.println("Разность введенных чисел =" + m);
+               }
+               else  if (oper == *) {
+                   int m = (x * y);
+                    System.out.println("Произведение введенных чисел =" + m);
+               }
+               else  {
+                 int m = (x / y);
+                    System.out.println("Частное введенных чисел =" + m);
+               }
+    }
+}
