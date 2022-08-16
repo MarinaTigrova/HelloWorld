@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите первое число:");
+        Scanner scanner = new Scanner(System.in);
+        int x = Scanner.textInt();
+        System.out.println("Введите второе число:");
+        Scanner scanner = new Scanner(System.in);
+        int y = Scanner.textInt();
+        System.out.println("Введите третье число:");
+        Scanner scanner = new Scanner(System.in);
+        int z = Scanner.textInt();
+          int m = (x+y+z)/3;
+        System.out.println("Среднее арифметическое введенных чисел =" + m);
+            int n = m/2;
+            if (n > 3){
+        System.out.println("Программа выполнена корректно");
+            }
+    }
+}
