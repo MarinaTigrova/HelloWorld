@@ -1,0 +1,46 @@
+//программа конвертер физических величин
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Выберите что переводить: 1 - масса, 2 - расстояние");
+        Scanner scanner = new Scanner(System.in);
+        int x = Scanner.textInt();
+        switch (x) {
+            case 1:
+            case 2:
+                System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
+                Scanner scanner = new Scanner(System.in);
+                int y = Scanner.textInt();
+                System.out.println("Введите число");
+                Scanner scanner = new Scanner(System.in);
+                int z = Scanner.textInt();
+                switch (y) {
+                    case 1:
+                        int m = z;
+                        double l = z * 0.0006;
+                        double j = z * 1.094;
+                        double f = z * 3.281;
+                        System.out.println("Результат:");
+                        System.out.println("Метры:" + m);
+                        System.out.println("Мили:" + l);
+                        System.out.println("Ярды:" + j);
+                        System.out.println("Футы:" + f);
+                        break;
+                    case 2:
+                        int l = z;
+                        double m = z * 1609.34;
+                        double j = z * 1760;
+                        double f = z * 5280;
+                        System.out.println("Результат:");
+                        System.out.println("Мили:" + l);
+                        System.out.println("Метры:" + m);
+                        System.out.println("Ярды:" + j);
+                        System.out.println("Футы:" + f);
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
+        }
+    }
+}
