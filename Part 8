@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Введите любое целое положительное число:");
+        Scanner scanner = new Scanner(System.in);
+        int n = Scanner.textInt();
+        int sum = 0;
+        int temp;
+        for(int i = 0;i<n;i++){
+            if(i % 2 !=0)sum+=temp;
+        }        
+        System.out.println("Cумма нечетных чисел от 0 до "+n+" равна "+ sum);
+    }
+}
