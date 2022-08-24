@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 5;
+        int z = 8;
+        System.out.println("Введите размер массива:");
+        Scanner scanner = new Scanner(System.in);
+        int size = Scanner.textInt();
+        int array[] = new int[size];
+        System.out.println("Введите элементы массива:");
+        for (int i = 0; i < size; i++) {
+            array[i] = input.nextInt();
+            if (i = x) {
+                System.out.println("Данное значение имеется в константах");
+            } else if (i = y) {
+                System.out.println("Данное значение имеется в константах");
+            } else (i = z) {
+                System.out.println("Данное значение имеется в константах");
+            }
+        }
+    }
+}
