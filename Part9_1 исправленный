@@ -1,0 +1,33 @@
+public class Main {
+    public static void main(String[] args) {
+        int sum = 0;
+        int count = 0;
+        int a, b, c;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите количество строк массива: ");
+        a = Scanner.nextInt();
+        System.out.println("Введите количество столбцов массива: ");
+        b = Scanner.nextInt();
+        int[][] array = new int[a][b];
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.println("Введите элемент массива[" + i + "][" + j + "]:");
+                array[i][j] = Scanner.nextInt();
+            }
+        }
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                sum += array[i][j];
+                count++;
+            }
+        }
+        c = +sum / count;
+                System.out.println("Массив, умноженный на среднее арифметическое всех элементов: ");
+            for (int i = 0; i < a; i++) {
+                for (int j = 0; j < b; j++) {
+                System.out.println(" " + array[i][j]*c" ");
+            }
+            System.out.println();
+        }
+    }
+}
