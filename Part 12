@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        boolean result;
+        int sum, sum1, sum2, sum3;
+        String str1 = "I like Java!!!";
+        String str2;
+        result = str1.contains("Java");
+        if (result = true) {
+            sum1++;
+            System.out.println("1 верно");}
+        else {System.out.println("1 неверно");}
+        result = str1.startsWith("I like");
+        if (result = true) {
+            sum2++;
+            System.out.println("2 верно");}
+            else {System.out.println("2 неверно");}
+        result = str1.endsWith("!!!");
+        if (result = true) {
+            sum3++;
+            System.out.println("3 верно");}
+            else {System.out.println("3 неверно");}
+            sum = sum1+sum2+sum3;
+            if (sum = 3) {
+                System.out.println(str1.toUpperCase());}
+        String str2 = str1.replace("a","o");
+        System.out.println(str2.substring(8,11);
+        }
+    }
