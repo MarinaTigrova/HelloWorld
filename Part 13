@@ -1,0 +1,29 @@
+public class Main {
+    public static void main(String[] args) {
+        String words;
+        System.out.println("Введите I love Java 8 Я люблю Java 14");
+        words = Scanner.nextInt();
+        String[] str1Array = words.split("");
+        List<String> englishWords = new ArrayList<>();
+        for (String word : wordsArray) {
+            if (isLatinWord(word)) {
+                englishWords.add(word);
+            }
+        }
+        englishWords.forEach(System.out::println);
+        System.out.println("Всего слов = " + englishWords.size());
+    }
+    private static boolean isLatinWord(String word) {
+        char[] characters = word.toCharArray();
+        for (char c : characters) {
+            if (!isLatinSymbol(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    private static boolean isLatinSymbol(char symbol) {
+    return (symbol >= 65 && symbol<= 90) || (symbol >= 97 && symbol<= 122);
+    }
+    
+}
