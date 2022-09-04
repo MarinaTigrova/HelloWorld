@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        String c, d, s;
+        Integer a, b;
+        System.out.println("Введите первое число: ");
+        a = Scanner.nextInt();
+        System.out.println("Введите + или -");
+        Scanner scanner = new Scanner(System.in);
+        c = Scanner.nextInt();
+        System.out.println("Введите второе число: ");
+        b = Scanner.nextInt();
+        System.out.println("Введите =");
+        Scanner scanner = new Scanner(System.in);
+        d = Scanner.nextInt();
+        c = c.equalsIgnoreCase("+");
+        if (c = true) {
+            s = a + b;}
+            else {s = a - b;};
+                System.out.println("Результат:" + s);
+                }
+        }
