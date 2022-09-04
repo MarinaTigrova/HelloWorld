@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        double x, y, z;
+        System.out.println("Введите текущий курс доллара");
+        Scanner scanner = new Scanner(System.in);
+        double x = Scanner.nextFloat();
+        System.out.println("Введите количество рублей");
+        Scanner scanner = new Scanner(System.in);
+        double y = Scanner.nextFloat();
+        z = y/x;
+        System.out.println( y +"рублей - это"+ z +"долларов");
+                }
+    }
