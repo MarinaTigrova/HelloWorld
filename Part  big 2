@@ -1,0 +1,62 @@
+public class Main {
+    public static void main(String[] args) {
+        String a, b, c, d, s;
+        Integer x;
+        System.out.println("Одно из трех вводимых чисел должно быть x. Введите первое число: ");
+        Scanner scanner = new Scanner(System.in);
+        a = Scanner.nextInt();
+        System.out.println("Введите + или -");
+        d = Scanner.nextInt();
+        System.out.println("Введите второе число: ");
+        b = Scanner.nextInt();
+        System.out.println("Введите третье число: ");
+        c = Scanner.nextInt();
+        if (a = "x" & d = "+") {
+            Integer b = new Integer(b);
+            Integer c = new Integer(c);
+            x = c - b;
+            System.out.println("x=" + x);
+            return;
+        } else {
+            if (a = "x" & d = "-") {
+                Integer b = new Integer(b);
+                Integer c = new Integer(c);
+                x = c + b;
+                System.out.println("x=" + x);
+                return;
+            } else {
+                if (b = "x" & d = "+") {
+                    Integer a = new Integer(a);
+                    Integer c = new Integer(c);
+                    x = c - a;
+                    System.out.println("x=" + x);
+                    return;
+                } else {
+                    if (b = "x" & d = "-") {
+                        Integer b = new Integer(b);
+                        Integer c = new Integer(c);
+                        x = a - c;
+                        System.out.println("x=" + x);
+                        return;
+                    } else {
+                        if (c = "x" & d = "+") {
+                            Integer b = new Integer(b);
+                            Integer a = new Integer(a);
+                            x = a + b;
+                            System.out.println("x=" + x);
+                            return;
+                        } else {
+                            if (c = "x" & d = "-") {
+                                Integer b = new Integer(b);
+                                Integer a = new Integer(a);
+                                x = a - b;
+                                System.out.println("x=" + x);
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
